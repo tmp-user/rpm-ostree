@@ -853,9 +853,6 @@ rpmostree_compose_builtin_tree (int             argc,
             goto out;
         }
 
-      /* Protect the system's /etc and /usr */
-      if (!_rpmostree_libcontainer_bind_mount_readonly ("/etc", error))
-        goto out;
       if (!_rpmostree_libcontainer_bind_mount_readonly ("/usr", error))
         goto out;
     }

@@ -286,7 +286,7 @@ yum_context_new (RpmOstreeTreeComposeContext  *self,
   int clone_flags = SIGCHLD | CLONE_NEWNS | CLONE_NEWPID;
   int pipefds[2];
 
-  g_ptr_array_add (yum_argv, g_strdup ("yum"));
+  g_ptr_array_add (yum_argv, g_strdup (YUM_BINARY));
   g_ptr_array_add (yum_argv, g_strdup ("-y"));
 
   if (!append_repo_and_cache_opts (self, treedata, yum_argv,
@@ -364,7 +364,7 @@ yum_context_new (RpmOstreeTreeComposeContext  *self,
             _rpmostree_perror_fatal ("mount(/, MS_PRIVATE | MS_NOSUID)");
         }
 
-      if (execvp ("yum", (char**)yum_argv->pdata) < 0)
+      if (execvp (YUM_BINARY, (char**)yum_argv->pdata) < 0)
         _rpmostree_perror_fatal ("execvp");
     }
 

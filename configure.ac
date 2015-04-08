@@ -53,6 +53,11 @@ GLIB_TESTS
 
 GOBJECT_INTROSPECTION_REQUIRE([1.34.0])
 
+AC_ARG_WITH(yum-binary,
+	    AS_HELP_STRING([--with-yum-binary], [Use this yum binary @<:@default=yum@:>@]),
+	    [], [with_yum_binary=yum])
+AC_DEFINE_UNQUOTED(YUM_BINARY, ["$with_yum_binary"], [Define to name or path of yum binary])
+
 AC_ARG_ENABLE(installed_tests,
               AS_HELP_STRING([--enable-installed-tests],
                              [Install test programs (default: no)]),,

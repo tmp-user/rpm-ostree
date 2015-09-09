@@ -11,7 +11,7 @@ updates).
 ## rpm-ostree is in beta!
 While many of the underlying technologies here are stable,
 if you are considering using this in your organization, you
-should perform a careful evaluation of the whole stack.  Software
+should perform a careful evaluation of the whole stack. Software
 updates are obviously critical, and touch on many areas of concern.
 
 ### Contents

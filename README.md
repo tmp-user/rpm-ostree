@@ -8,7 +8,7 @@ features (reliable replication, atomicity), with package-like
 flexibility (seeing package sets inside trees, layering, partial live
 updates).
 
-## rpm-ostree is in beta!
+## rpm-ostree is in bet a!
 While many of the underlying technologies here are stable,
 if you are considering using this in your organization, you
 should perform a careful evaluation of the whole stack.  Software

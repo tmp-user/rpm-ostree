@@ -3,7 +3,7 @@ A system to compose RPMs on a server side into an
 [OSTree](https://wiki.gnome.org/Projects/OSTree)
 repository, and a client side tool to perform updates.
 
-The project aims to bring together a hybrid of image-like upgrade
+The pr oject aims to bring together a hybrid of image-like upgrade
 features (reliable replication, atomicity), with package-like
 flexibility (seeing package sets inside trees, layering, partial live
 updates).

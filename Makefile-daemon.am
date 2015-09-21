@@ -12,7 +12,7 @@ rpm-ostreed-generated.c: Makefile.am $(top_srcdir)/src/daemon/org.projectatomic.
 		--generate-docbook rpm-ostreed-generated \
 		$(top_srcdir)/src/daemon/org.projectatomic.rpmostree1.xml \
 		$(NULL)
-BUILT_SOURCES += $(dbus_built_sources)
+BUILT_SOURCES += $(dbus_built_sources) 
 CLEANFILES += rpm-ostreed-generated*
 
 noinst_LTLIBRARIES += librpmostreed.la
